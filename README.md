@@ -27,6 +27,7 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+https://github.com/GauSim/nestjs-typeorm/tree/master/code/src 
 
 ## Installation
 
