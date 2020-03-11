@@ -6,5 +6,5 @@ export declare class ItemDTO implements Readonly<ItemDTO> {
     description: string;
     static from(dto: Partial<ItemDTO>): ItemDTO;
     static fromEntity(entity: Item): ItemDTO;
-    toEntity(user?: User): Item;
+    static toEntity(dto: Partial<ItemDTO>, user?: User): Item;
 }

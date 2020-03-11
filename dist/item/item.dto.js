@@ -27,14 +27,14 @@ class ItemDTO {
             description: entity.description
         });
     }
-    toEntity(user = null) {
+    static toEntity(dto, user = null) {
         const it = new item_entity_1.Item();
-        it.id = this.id;
-        it.name = this.name;
-        it.description = this.description;
+        it.id = dto.id;
+        it.name = dto.name;
+        it.description = dto.description;
         it.createdAt = new Date();
-        it.createdBy = user ? user.id : null;
-        it.lastChangedBy = user ? user.id : null;
+        it.createdBy = user ? user.id : 'test';
+        it.lastChangedBy = user ? user.id : 'test';
         return it;
     }
 }
