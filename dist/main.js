@@ -6,7 +6,7 @@ const config_service_1 = require("./config/config.service");
 const swagger_1 = require("@nestjs/swagger");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
-    if (!config_service_1.configService.isProduction()) {
+    if (true || !config_service_1.configService.isProduction()) {
         const document = swagger_1.SwaggerModule.createDocument(app, new swagger_1.DocumentBuilder()
             .setTitle('Item API')
             .setDescription('My Item API')

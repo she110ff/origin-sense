@@ -26,7 +26,7 @@ let ItemService = class ItemService {
             .then(items => items.map(e => item_dto_1.ItemDTO.fromEntity(e)));
     }
     async create(dto, user) {
-        return this.repo.save(dto.toEntity(user))
+        return this.repo.save(item_dto_1.ItemDTO.toEntity(dto, user))
             .then(e => item_dto_1.ItemDTO.fromEntity(e));
     }
 };

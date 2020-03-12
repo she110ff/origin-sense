@@ -3,4 +3,5 @@ export declare class User {
     firstName: string;
     lastName: string;
     isActive: boolean;
+    createAt: Date;
 }

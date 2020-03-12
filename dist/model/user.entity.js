@@ -28,6 +28,10 @@ __decorate([
     typeorm_1.Column({ default: true }),
     __metadata("design:type", Boolean)
 ], User.prototype, "isActive", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", Date)
+], User.prototype, "createAt", void 0);
 User = __decorate([
     typeorm_1.Entity()
 ], User);
