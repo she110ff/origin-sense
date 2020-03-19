@@ -43,4 +43,4 @@ export class ItemDTO implements Readonly<ItemDTO> {
     it.lastChangedBy = user ? user.id : 'test';
     return it;
   }
-}
+} 
