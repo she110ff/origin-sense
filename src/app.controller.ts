@@ -12,6 +12,12 @@ export class AppController {
     return this.authService.login(req.user);
   }
 
+  @UseGuards(AuthGuard('jwt'))
+  @Get('profile')
+  async getProfile(@Request() req) {
+    return req.user;
+  }
+
   @Get()
   getHello(): string {
     return 'hello';

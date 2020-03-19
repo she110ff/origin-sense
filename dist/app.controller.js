@@ -22,6 +22,9 @@ let AppController = class AppController {
     async login(req) {
         return this.authService.login(req.user);
     }
+    async getProfile(req) {
+        return req.user;
+    }
     getHello() {
         return 'hello';
     }
@@ -34,6 +37,14 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], AppController.prototype, "login", null);
+__decorate([
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    common_1.Get('profile'),
+    __param(0, common_1.Request()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, "getProfile", null);
 __decorate([
     common_1.Get(),
     __metadata("design:type", Function),
