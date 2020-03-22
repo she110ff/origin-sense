@@ -25,6 +25,10 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "lastName", void 0);
 __decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", String)
+], User.prototype, "email", void 0);
+__decorate([
     typeorm_1.Column({ default: true }),
     __metadata("design:type", Boolean)
 ], User.prototype, "isActive", void 0);

@@ -1,0 +1,47 @@
+
+
+CURL
+---------------------------------------
+curl -X POST http://localhost:3000/auth/login -d '{"username": "john", "password": "changeme"}' -H "Content-Type: application/json"
+
+curl http://localhost:3000/profile -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9......"
+
+
+
+FIND
+--------------------------------------------------
+find ./src -type f -print | xargs grep 'password'
+
+
+
+{
+  id: '115751491616122511724',
+  displayName: 'Jung Youngsoo',
+  name: {
+    familyName: 'Youngsoo',
+    givenName: 'Jung'
+  },
+  emails: [
+    {
+      value: 'youngsoo.j@gmail.com',
+      verified: true
+    }
+  ],
+  photos: [
+    {
+      value: 'https://lh3.googleusercontent.com/a-/AOh14GgfLA6Uws3iNDOBAzvQd8SfLnQkOL4mcnAtSNCgqw'
+    }
+  ],
+  provider: 'google',
+  _raw: '{\n  "sub": "115751491616122511724",\n  "name": "Jung Youngsoo",\n  "given_name": "Jung",\n  "family_name": "Youngsoo",\n  "picture": "https://lh3.googleusercontent.com/a-/AOh14GgfLA6Uws3iNDOBAzvQd8SfLnQkOL4mcnAtSNCgqw",\n  "email": "youngsoo.j@gmail.com",\n  "email_verified": true,\n  "locale": "ko"\n}',
+  _json: {
+    sub: '115751491616122511724',
+    name: 'Jung Youngsoo',
+    given_name: 'Jung',
+    family_name: 'Youngsoo',
+    picture: 'https://lh3.googleusercontent.com/a-/AOh14GgfLA6Uws3iNDOBAzvQd8SfLnQkOL4mcnAtSNCgqw',
+    email: 'youngsoo.j@gmail.com',
+    email_verified: true,
+    locale: 'ko'
+  }
+}

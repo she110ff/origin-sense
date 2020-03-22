@@ -1174,7 +1174,7 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/user/user.service.ts": {
-        "version": "3b61c39fa1839d2ec2e9daea64a95603d304300ba479abd1bf95f3280e3afbce",
+        "version": "f52e38ab637ac1d016e7f68f7ed4f8e9e120817610b74e8af0d5b5168864a7b4",
         "signature": "872677ea065f79f22b7457a08238ea4195a519d93acf299a0628c178846005d0"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -2521,8 +2521,24 @@
         "version": "7f119bb99e923536aa8231778bb88c0e1b7a5cdd3bf0230fe7600a1fc0e9de7a",
         "signature": "e3e047e8cb263193af5ebae4c6030f0ddb84e6b3c6f8c8be3413ceae2c89969a"
       },
+      "../src/auth/google.strategy.ts": {
+        "version": "3052b5c5a2bd82bf61cea3f4ed754c4002b7a02a9e47955bb308fd4cb8bf3302",
+        "signature": "4d60edb2e4acaf999b24e2b98c2900b1aa90a5a5b1070778d41d47aa76f50f85"
+      },
+      "../src/model/user.entity.ts": {
+        "version": "2d46960e695a88cbd0284e76edd350eddf1df0aaff680b0df25bd4603fb7e0bf",
+        "signature": "f0803630108f800506718dbb0ba4181ccbb31cf090c730f4ee39aad8c7e3c5e0"
+      },
+      "../src/user/user.dto.ts": {
+        "version": "7c76ea21ac1b9a63a9443b315b5c4215acdb56bfff53d58531343f9b2fed8c61",
+        "signature": "dead372a17fc7421e9e2f5878081d7a441b4b3ccf8d82a3dc62823c1c8a50b8d"
+      },
+      "../src/auth/auth.controller.ts": {
+        "version": "da722549e45c603b7934c54f4110c95aae18337d1f9d17e3b3027748b1ab8e98",
+        "signature": "06e29d2dcd24540b634cdd16bcae61341860663dc4062a769279456279556c53"
+      },
       "../src/auth/auth.module.ts": {
-        "version": "306df47d6adf72866f6c79faab5cb8a9fdf87545e8bb1534921cd0a923e6dbee",
+        "version": "664ce6cfd2add35f362b08c323cd4fca012e59f3d7d101f92f701f2b398b01ed",
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1"
       },
       "../src/app.module.ts": {
@@ -2681,10 +2697,6 @@
         "version": "4be90d9c16edebc696ed4ab6ac81f127f51675149c2365bf8a164fcbc03ae986",
         "signature": "4aadd8349c4ee10b495f0a9dff7b5b47a6ebba6be72e77c49d470d4c4fd995b3"
       },
-      "../src/model/user.entity.ts": {
-        "version": "1a68a010a891d259a3141888d8a4bc1c4f952398b724dbf8898d8e51195574a9",
-        "signature": "2367bc74734dd86689cc7b6319f2a849b5d2217924988845732cf3c785ff7440"
-      },
       "../src/scripts/seed.ts": {
         "version": "66622c49d16bdbcc660b66862cb446d0d52c6863aa24ee3b2a8e832aac671865",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
@@ -2692,6 +2704,10 @@
       "../src/scripts/write-type-orm-config.ts": {
         "version": "a7e2bc1195d36e18a563320a2f7e6e4eb6106c4f09a4eafc5b99a1b64c7d5262",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../src/user/user.controller.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -8077,6 +8093,40 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/auth/google.strategy.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/model/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/user/user.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../src/model/user.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/user/user.dto.ts",
+        "../src/user/user.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/auth/auth.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/auth/auth.service.ts",
@@ -8086,6 +8136,8 @@
         "../src/auth/jwt.strategy.ts",
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../src/auth/constants.ts",
+        "../src/auth/google.strategy.ts",
+        "../src/auth/auth.controller.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8443,13 +8495,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/model/user.entity.ts": [
-        "../node_modules/typeorm/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/scripts/seed.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/config/config.service.ts",
@@ -8464,6 +8509,12 @@
       ],
       "../src/scripts/write-type-orm-config.ts": [
         "../src/config/config.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/user/user.controller.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -13832,6 +13883,10 @@
       "../src/auth/jwt.strategy.ts": [
         "../node_modules/@types/passport-jwt/index.d.ts"
       ],
+      "../src/auth/auth.controller.ts": [
+        "../src/user/user.service.ts",
+        "../src/user/user.dto.ts"
+      ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/common/interfaces/index.d.ts",
@@ -14691,6 +14746,7 @@
       "../node_modules/@nestjs/jwt/dist/index.d.ts",
       "../node_modules/@nestjs/jwt/index.d.ts",
       "../src/auth/auth.service.ts",
+      "../src/app.controller.ts",
       "../src/app.service.ts",
       "../src/cats/cats.controller.ts",
       "../node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts",
@@ -15018,7 +15074,11 @@
       "../node_modules/@types/superagent/index.d.ts",
       "../node_modules/@types/supertest/index.d.ts",
       "../src/auth/jwt.strategy.ts",
+      "../src/auth/google.strategy.ts",
+      "../src/model/user.entity.ts",
+      "../src/user/user.dto.ts",
       "../src/auth/auth.module.ts",
+      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/injector/module-token-factory.d.ts",
@@ -15057,9 +15117,9 @@
       "../node_modules/@nestjs/core/index.d.ts",
       "../src/main.ts",
       "../src/migration/1583766205825-init.ts",
-      "../src/model/user.entity.ts",
       "../src/scripts/seed.ts",
       "../src/scripts/write-type-orm-config.ts",
+      "../src/user/user.controller.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -15093,8 +15153,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/app.controller.ts",
-      "../src/app.module.ts"
+      "../src/auth/auth.controller.ts"
     ]
   },
   "version": "3.8.3"
