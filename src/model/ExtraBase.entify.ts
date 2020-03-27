@@ -20,8 +20,17 @@ export abstract class BaseEntity {
   @CreateDateColumn({ type: 'timestamp' })
   createdAt!: Date;
 
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  createdBy: string;
+
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt!: Date;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  lastChangedBy: string;
+
+  @Column({ type: 'varchar', length: 300, nullable: true })
+  internalComment: string | null;
 
   @BeforeInsert()
   private setCreateDate(): void {

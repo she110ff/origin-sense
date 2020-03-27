@@ -10,32 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-let User = class User {
+const base_entity_1 = require("./base.entity");
+let User = class User extends base_entity_1.BaseEntity {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn(),
-    __metadata("design:type", Number)
-], User.prototype, "id", void 0);
-__decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
-], User.prototype, "firstName", void 0);
-__decorate([
-    typeorm_1.Column(),
-    __metadata("design:type", String)
-], User.prototype, "lastName", void 0);
+], User.prototype, "name", void 0);
 __decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
 ], User.prototype, "email", void 0);
 __decorate([
-    typeorm_1.Column({ default: true }),
-    __metadata("design:type", Boolean)
-], User.prototype, "isActive", void 0);
-__decorate([
     typeorm_1.Column(),
-    __metadata("design:type", Date)
-], User.prototype, "createAt", void 0);
+    __metadata("design:type", String)
+], User.prototype, "password", void 0);
 User = __decorate([
     typeorm_1.Entity()
 ], User);

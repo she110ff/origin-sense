@@ -35,21 +35,9 @@ __decorate([
     __metadata("design:type", Date)
 ], BaseEntity.prototype, "createdAt", void 0);
 __decorate([
-    typeorm_1.Column({ type: 'varchar', length: 300 }),
-    __metadata("design:type", String)
-], BaseEntity.prototype, "createdBy", void 0);
-__decorate([
     typeorm_1.UpdateDateColumn({ type: 'timestamp' }),
     __metadata("design:type", Date)
 ], BaseEntity.prototype, "updatedAt", void 0);
-__decorate([
-    typeorm_1.Column({ type: 'varchar', length: 300 }),
-    __metadata("design:type", String)
-], BaseEntity.prototype, "lastChangedBy", void 0);
-__decorate([
-    typeorm_1.Column({ type: 'varchar', length: 300, nullable: true }),
-    __metadata("design:type", String)
-], BaseEntity.prototype, "internalComment", void 0);
 __decorate([
     typeorm_1.BeforeInsert(),
     __metadata("design:type", Function),

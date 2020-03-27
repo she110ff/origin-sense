@@ -1,8 +1,6 @@
-export declare class User {
-    id: number;
-    firstName: string;
-    lastName: string;
+import { BaseEntity } from './base.entity';
+export declare class User extends BaseEntity {
+    name: string;
     email: string;
-    isActive: boolean;
-    createAt: Date;
+    password: string;
 }

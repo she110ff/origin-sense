@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsString, IsUUID, } from 'class-validator';
+import { IsString, IsUUID } from 'class-validator';
 import { Item } from '../model/item.entity';
 import { User } from '../user.decorator';
 
@@ -7,7 +7,6 @@ export class ItemDTO implements Readonly<ItemDTO> {
   @ApiProperty({ required: true })
   @IsUUID()
   id: string;
-
 
   @ApiProperty({ required: true })
   @IsString()
@@ -29,7 +28,7 @@ export class ItemDTO implements Readonly<ItemDTO> {
     return this.from({
       id: entity.id,
       name: entity.name,
-      description: entity.description
+      description: entity.description,
     });
   }
 
@@ -39,8 +38,6 @@ export class ItemDTO implements Readonly<ItemDTO> {
     it.name = dto.name;
     it.description = dto.description;
     it.createdAt = new Date();
-    it.createdBy = user ? user.id : 'test';
-    it.lastChangedBy = user ? user.id : 'test';
     return it;
   }
-} 
+}

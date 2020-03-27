@@ -12,6 +12,10 @@ FIND
 --------------------------------------------------
 find ./src -type f -print | xargs grep 'password'
 
+Windows process kill
+--------------------------------------------------
+netstat -ano | findstr :3000
+taskkill /PID 67232 /F
 
 
 {

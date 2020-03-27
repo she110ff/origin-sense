@@ -24,7 +24,7 @@ class ItemDTO {
         return this.from({
             id: entity.id,
             name: entity.name,
-            description: entity.description
+            description: entity.description,
         });
     }
     static toEntity(dto, user = null) {
@@ -33,8 +33,6 @@ class ItemDTO {
         it.name = dto.name;
         it.description = dto.description;
         it.createdAt = new Date();
-        it.createdBy = user ? user.id : 'test';
-        it.lastChangedBy = user ? user.id : 'test';
         return it;
     }
 }

@@ -17,7 +17,12 @@ export class AuthController {
   @Post('signup')
   async signup(@Body() user: UserDTO): Promise<UserDTO> {
     console.log('signup :', user);
-    let usr = this.userService.findOne(user.id);
+    let usr = await this.userService.findOne(user.id);
+    if (usr) {
+      // already signed up error masseage
+    } else {
+      //
+    }
     console.log('return usr :', usr);
     return usr;
   }

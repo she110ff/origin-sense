@@ -1,12 +1,28 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { User } from '../model/user.entity';
+import { Repository } from 'typeorm';
+import { UserDTO } from './user.dto';
 
-export type User = any;
+export type MockUser = any;
 
 @Injectable()
 export class UserService {
-  private readonly users: User[];
+  private users: MockUser[];
 
-  constructor() {
+  constructor(
+    @InjectRepository(User) private readonly userRepo: Repository<User>,
+  ) {}
+
+  async findOne(email: string): Promise<User | undefined> {
+    return await this.userRepo.findOne({ where: { email: email } });
+  }
+
+  async findOneMock(username: string): Promise<User | undefined> {
+    return this.users.find(user => user.userId === username);
+  }
+
+  private createdUserMock() {
     this.users = [
       {
         userId: 'youngsoo.j@gmail.com',
@@ -24,9 +40,5 @@ export class UserService {
         password: 'tom',
       },
     ];
-  }
-
-  async findOne(username: string): Promise<User | undefined> {
-    return this.users.find(user => user.userId === username);
   }
 }
